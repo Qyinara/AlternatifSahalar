@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternatif Sahalar ve Normalleştirilmiş Matris</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #table-container {
+            margin: 20px auto;
+            width: 90%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        td[contenteditable="true"] {
+            background-color: #fffbe6;
+            cursor: text;
+        }
+
+        .total-cell {
+            font-weight: bold;
+            background-color: #f4f4f4;
+        }
+
+        .normalized {
+            background-color: #eef6ff;
+        }
+
+        canvas {
+            margin: 50px auto;
+            max-width: 190%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alternatif Sahalar ve Normalleştirilmiş Matris</h1>
+    <div id="table-container"></div>
+    <canvas id="summaryChart"></canvas>
+    <script src="app.js"></script>
+</body>
+</html>
